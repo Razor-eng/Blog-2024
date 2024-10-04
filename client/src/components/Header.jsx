@@ -23,6 +23,11 @@ export default function Header() {
   const [view, setView] = useState(false);
 
   useEffect(() => {
+    setView(false);
+  }, [location.pathname])
+
+
+  useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
     const searchTermFromUrl = urlParams.get('searchTerm');
     if (searchTermFromUrl) {
