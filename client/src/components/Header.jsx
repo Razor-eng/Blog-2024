@@ -24,7 +24,7 @@ export default function Header() {
 
   useEffect(() => {
     setView(false);
-  }, [location.pathname])
+  }, [location])
 
 
   useEffect(() => {
